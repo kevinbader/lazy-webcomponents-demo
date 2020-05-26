@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<p>This is the host app. Next is the web component...</p>
+
+<ng-template #loading>Loading...</ng-template>
+<ng-template #error><p>Failed to load web component!</p></ng-template>
+<ask-user
+  *axLazyElement="componentUrl; loadingTemplate: loading; errorTemplate: error"
+  question="How are you?"
+  (answer)="onAnswer($event)"
+></ask-user>

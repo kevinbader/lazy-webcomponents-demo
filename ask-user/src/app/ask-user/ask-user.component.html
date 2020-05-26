@@ -1,0 +1,13 @@
+<div>
+  <button (click)="toggleDialog()">
+    <span *ngIf="!showDialog">ask user</span>
+    <span *ngIf="showDialog">cancel</span>
+  </button>
+  <span *ngIf="showDialog">
+    <span>{{ question }}</span>
+    <input #answerInput placeholder="Your answer?" />
+    <button (click)="onSubmit(answerInput.value)">
+      submit
+    </button>
+  </span>
+</div>
