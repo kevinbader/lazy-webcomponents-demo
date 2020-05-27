@@ -15,4 +15,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14
-    - run: npm run deploy
+    - run: npm install
+      working-directory: ask-user
+    - run: npm test
+      working-directory: ask-user
+    - run: npm build
+      working-directory: ask-user
+    - name: Deploy to GitHub Pages
+      uses: Cecilapp/GitHub-Pages-deploy@master
+      env:
+        EMAIL: kevinbader@users.noreply.github.com
+        GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_DIR: ask-user/dist/ask-user
