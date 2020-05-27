@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "cd dist/ask-user && serve -C -p 5000",
     "build": "ng build --prod --single-bundle --output-hashing none",
     "test": "ng test",
     "lint": "ng lint",
@@ -42,6 +42,7 @@
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~7.0.0",
+    "serve": "^11.3.1",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
