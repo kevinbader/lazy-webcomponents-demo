@@ -4,7 +4,7 @@
   "description": "Demo showcasing lazy-loaded web components with Angular Elements and *axLazyElement",
   "main": "index.js",
   "scripts": {
-    "build": "cd ask-user && npm i && ng build --prod --single-bundle --output-hashing none",
+    "build": "cd ask-user && npm i && npm run build",
     "deploy": "npm run build && gh-pages -d ask-user/dist/ask-user"
   },
   "repository": {
