@@ -17,8 +17,6 @@ jobs:
         node-version: 14
     - run: npm install
       working-directory: ask-user
-    - run: npm test
-      working-directory: ask-user
     - run: npm build
       working-directory: ask-user
     - name: Deploy to GitHub Pages
