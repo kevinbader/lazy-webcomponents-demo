@@ -1,0 +1,23 @@
+{
+  "name": "lazy-webcomponents-demo",
+  "version": "1.0.0",
+  "description": "Demo showcasing lazy-loaded web components with Angular Elements and *axLazyElement",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd ask-user && npm i && ng build --prod --single-bundle --output-hashing none",
+    "deploy": "npm run build && gh-pages -d ask-user/dist/ask-user"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinbader/lazy-webcomponents-demo.git"
+  },
+  "author": "kevinbader",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinbader/lazy-webcomponents-demo/issues"
+  },
+  "homepage": "https://github.com/kevinbader/lazy-webcomponents-demo#readme",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

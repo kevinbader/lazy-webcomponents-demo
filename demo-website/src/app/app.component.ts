@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-website';
-  componentUrl = 'http://localhost:5000/main-es2015.js';
+  // componentUrl = 'http://localhost:5000/main-es2015.js';
+  componentUrl = 'https://kevinbader.github.io/lazy-webcomponents-demo/main-es2015.js';
 
   onAnswer(event) {
     const { answer } = event.detail;
