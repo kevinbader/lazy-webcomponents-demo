@@ -1,12 +1,14 @@
 # Web Components Demo with Angular Elements
 
-- [Steps to do this yourself](#steps-to-do-this-yourself)
-  - [Create a web component](#create-a-web-component)
-  - [In the host project](#in-the-host-project)
+![gh-pages](https://github.com/kevinbader/lazy-webcomponents-demo/workflows/gh-pages/badge.svg?branch=master)
 
 `ask-user` is a simple web component that consists of a button and a pretty ugly form. `demo-website` embeds this components by lazy-loading it from a hard-coded URL.
 
 You can test embedding the `ask-user` component in your own website right now! It's available at [https://kevinbader.github.io/lazy-webcomponents-demo/main-es2015.js](https://kevinbader.github.io/lazy-webcomponents-demo/main-es2015.js).
+
+- [Steps to do this yourself](#steps-to-do-this-yourself)
+  - [Create a web component](#create-a-web-component)
+  - [In the host project](#in-the-host-project)
 
 ## Steps to do this yourself
 
