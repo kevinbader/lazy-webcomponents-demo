@@ -79,10 +79,13 @@ ng add @angular/elements
 ng add ngx-build-plus && ng g ngx-build-plus:wc-polyfill
 ```
 
-This enables the lazy-loading directive:
+This enables the `*axLazyElement` directive that embeds the web component and supports lazy loading (see [supported Angular versions](https://github.com/angular-extensions/elements#supported-angular-versions)):
 
 ```bash
+# For Angular >= 8:
 npm i -S @angular-extensions/elements
+# For Angular <= 7:
+npm i -S @angular-extensions/elements@^6.0.0
 ```
 
 In `app.module.ts`:
